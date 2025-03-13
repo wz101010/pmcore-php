@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  PMCore/Client
+ * @package  PMCore\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace PMCore/Client\Test\Model;
+namespace PMCore\Client\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -35,7 +35,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description JObjectApiResult
- * @package     PMCore/Client
+ * @package     PMCore\Client
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  PMCore/Client
+ * @package  PMCore\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace PMCore/Client\PMCore/Client/Api;
+namespace PMCore\Client\PMCore\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use PMCore/Client\ApiException;
-use PMCore/Client\Configuration;
-use PMCore/Client\HeaderSelector;
-use PMCore/Client\ObjectSerializer;
+use PMCore\Client\ApiException;
+use PMCore\Client\Configuration;
+use PMCore\Client\HeaderSelector;
+use PMCore\Client\ObjectSerializer;
 
 /**
  * FileApi Class Doc Comment
  *
  * @category Class
- * @package  PMCore/Client
+ * @package  PMCore\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -143,9 +143,9 @@ class FileApi
      * @param  string|null $path  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['fileCreateFolder'] to see the possible values for this operation
      *
-     * @throws \PMCore/Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PMCore\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \PMCore/Client\PMCore/Client/Model\JObjectApiResult
+     * @return \PMCore\Client\PMCore\Client\Model\JObjectApiResult
      */
     public function fileCreateFolder($app_key, $path = null, string $contentType = self::contentTypes['fileCreateFolder'][0])
     {
@@ -162,9 +162,9 @@ class FileApi
      * @param  string|null $path  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['fileCreateFolder'] to see the possible values for this operation
      *
-     * @throws \PMCore/Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PMCore\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \PMCore/Client\PMCore/Client/Model\JObjectApiResult, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PMCore\Client\PMCore\Client\Model\JObjectApiResult, HTTP status code, HTTP response headers (array of strings)
      */
     public function fileCreateFolderWithHttpInfo($app_key, $path = null, string $contentType = self::contentTypes['fileCreateFolder'][0])
     {
@@ -195,11 +195,11 @@ class FileApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\PMCore/Client\PMCore/Client/Model\JObjectApiResult' === '\SplFileObject') {
+                    if ('\PMCore\Client\PMCore\Client\Model\JObjectApiResult' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\PMCore/Client\PMCore/Client/Model\JObjectApiResult' !== 'string') {
+                        if ('\PMCore\Client\PMCore\Client\Model\JObjectApiResult' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -217,7 +217,7 @@ class FileApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PMCore/Client\PMCore/Client/Model\JObjectApiResult', []),
+                        ObjectSerializer::deserialize($content, '\PMCore\Client\PMCore\Client\Model\JObjectApiResult', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -236,7 +236,7 @@ class FileApi
                 );
             }
 
-            $returnType = '\PMCore/Client\PMCore/Client/Model\JObjectApiResult';
+            $returnType = '\PMCore\Client\PMCore\Client\Model\JObjectApiResult';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -269,7 +269,7 @@ class FileApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PMCore/Client\PMCore/Client/Model\JObjectApiResult',
+                        '\PMCore\Client\PMCore\Client\Model\JObjectApiResult',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -315,7 +315,7 @@ class FileApi
      */
     public function fileCreateFolderAsyncWithHttpInfo($app_key, $path = null, string $contentType = self::contentTypes['fileCreateFolder'][0])
     {
-        $returnType = '\PMCore/Client\PMCore/Client/Model\JObjectApiResult';
+        $returnType = '\PMCore\Client\PMCore\Client\Model\JObjectApiResult';
         $request = $this->fileCreateFolderRequest($app_key, $path, $contentType);
 
         return $this->client
@@ -470,9 +470,9 @@ class FileApi
      * @param  string|null $path 文件路径 (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['fileDelete'] to see the possible values for this operation
      *
-     * @throws \PMCore/Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PMCore\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \PMCore/Client\PMCore/Client/Model\JObjectApiResult
+     * @return \PMCore\Client\PMCore\Client\Model\JObjectApiResult
      */
     public function fileDelete($app_key, $path = null, string $contentType = self::contentTypes['fileDelete'][0])
     {
@@ -489,9 +489,9 @@ class FileApi
      * @param  string|null $path 文件路径 (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['fileDelete'] to see the possible values for this operation
      *
-     * @throws \PMCore/Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PMCore\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \PMCore/Client\PMCore/Client/Model\JObjectApiResult, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PMCore\Client\PMCore\Client\Model\JObjectApiResult, HTTP status code, HTTP response headers (array of strings)
      */
     public function fileDeleteWithHttpInfo($app_key, $path = null, string $contentType = self::contentTypes['fileDelete'][0])
     {
@@ -522,11 +522,11 @@ class FileApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\PMCore/Client\PMCore/Client/Model\JObjectApiResult' === '\SplFileObject') {
+                    if ('\PMCore\Client\PMCore\Client\Model\JObjectApiResult' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\PMCore/Client\PMCore/Client/Model\JObjectApiResult' !== 'string') {
+                        if ('\PMCore\Client\PMCore\Client\Model\JObjectApiResult' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -544,7 +544,7 @@ class FileApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PMCore/Client\PMCore/Client/Model\JObjectApiResult', []),
+                        ObjectSerializer::deserialize($content, '\PMCore\Client\PMCore\Client\Model\JObjectApiResult', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -563,7 +563,7 @@ class FileApi
                 );
             }
 
-            $returnType = '\PMCore/Client\PMCore/Client/Model\JObjectApiResult';
+            $returnType = '\PMCore\Client\PMCore\Client\Model\JObjectApiResult';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -596,7 +596,7 @@ class FileApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PMCore/Client\PMCore/Client/Model\JObjectApiResult',
+                        '\PMCore\Client\PMCore\Client\Model\JObjectApiResult',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -642,7 +642,7 @@ class FileApi
      */
     public function fileDeleteAsyncWithHttpInfo($app_key, $path = null, string $contentType = self::contentTypes['fileDelete'][0])
     {
-        $returnType = '\PMCore/Client\PMCore/Client/Model\JObjectApiResult';
+        $returnType = '\PMCore\Client\PMCore\Client\Model\JObjectApiResult';
         $request = $this->fileDeleteRequest($app_key, $path, $contentType);
 
         return $this->client
@@ -798,9 +798,9 @@ class FileApi
      * @param  string|null $dest_name  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['fileRename'] to see the possible values for this operation
      *
-     * @throws \PMCore/Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PMCore\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \PMCore/Client\PMCore/Client/Model\JObjectApiResult
+     * @return \PMCore\Client\PMCore\Client\Model\JObjectApiResult
      */
     public function fileRename($app_key, $source_name = null, $dest_name = null, string $contentType = self::contentTypes['fileRename'][0])
     {
@@ -818,9 +818,9 @@ class FileApi
      * @param  string|null $dest_name  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['fileRename'] to see the possible values for this operation
      *
-     * @throws \PMCore/Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PMCore\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \PMCore/Client\PMCore/Client/Model\JObjectApiResult, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PMCore\Client\PMCore\Client\Model\JObjectApiResult, HTTP status code, HTTP response headers (array of strings)
      */
     public function fileRenameWithHttpInfo($app_key, $source_name = null, $dest_name = null, string $contentType = self::contentTypes['fileRename'][0])
     {
@@ -851,11 +851,11 @@ class FileApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\PMCore/Client\PMCore/Client/Model\JObjectApiResult' === '\SplFileObject') {
+                    if ('\PMCore\Client\PMCore\Client\Model\JObjectApiResult' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\PMCore/Client\PMCore/Client/Model\JObjectApiResult' !== 'string') {
+                        if ('\PMCore\Client\PMCore\Client\Model\JObjectApiResult' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -873,7 +873,7 @@ class FileApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PMCore/Client\PMCore/Client/Model\JObjectApiResult', []),
+                        ObjectSerializer::deserialize($content, '\PMCore\Client\PMCore\Client\Model\JObjectApiResult', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -892,7 +892,7 @@ class FileApi
                 );
             }
 
-            $returnType = '\PMCore/Client\PMCore/Client/Model\JObjectApiResult';
+            $returnType = '\PMCore\Client\PMCore\Client\Model\JObjectApiResult';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -925,7 +925,7 @@ class FileApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PMCore/Client\PMCore/Client/Model\JObjectApiResult',
+                        '\PMCore\Client\PMCore\Client\Model\JObjectApiResult',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -973,7 +973,7 @@ class FileApi
      */
     public function fileRenameAsyncWithHttpInfo($app_key, $source_name = null, $dest_name = null, string $contentType = self::contentTypes['fileRename'][0])
     {
-        $returnType = '\PMCore/Client\PMCore/Client/Model\JObjectApiResult';
+        $returnType = '\PMCore\Client\PMCore\Client\Model\JObjectApiResult';
         $request = $this->fileRenameRequest($app_key, $source_name, $dest_name, $contentType);
 
         return $this->client
@@ -1140,9 +1140,9 @@ class FileApi
      * @param  \SplFileObject|null $file 上传的文件 (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['fileUpload'] to see the possible values for this operation
      *
-     * @throws \PMCore/Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PMCore\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \PMCore/Client\PMCore/Client/Model\JObjectApiResult
+     * @return \PMCore\Client\PMCore\Client\Model\JObjectApiResult
      */
     public function fileUpload($app_key, $path = null, $file = null, string $contentType = self::contentTypes['fileUpload'][0])
     {
@@ -1160,9 +1160,9 @@ class FileApi
      * @param  \SplFileObject|null $file 上传的文件 (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['fileUpload'] to see the possible values for this operation
      *
-     * @throws \PMCore/Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PMCore\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \PMCore/Client\PMCore/Client/Model\JObjectApiResult, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PMCore\Client\PMCore\Client\Model\JObjectApiResult, HTTP status code, HTTP response headers (array of strings)
      */
     public function fileUploadWithHttpInfo($app_key, $path = null, $file = null, string $contentType = self::contentTypes['fileUpload'][0])
     {
@@ -1193,11 +1193,11 @@ class FileApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\PMCore/Client\PMCore/Client/Model\JObjectApiResult' === '\SplFileObject') {
+                    if ('\PMCore\Client\PMCore\Client\Model\JObjectApiResult' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\PMCore/Client\PMCore/Client/Model\JObjectApiResult' !== 'string') {
+                        if ('\PMCore\Client\PMCore\Client\Model\JObjectApiResult' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1215,7 +1215,7 @@ class FileApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PMCore/Client\PMCore/Client/Model\JObjectApiResult', []),
+                        ObjectSerializer::deserialize($content, '\PMCore\Client\PMCore\Client\Model\JObjectApiResult', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1234,7 +1234,7 @@ class FileApi
                 );
             }
 
-            $returnType = '\PMCore/Client\PMCore/Client/Model\JObjectApiResult';
+            $returnType = '\PMCore\Client\PMCore\Client\Model\JObjectApiResult';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1267,7 +1267,7 @@ class FileApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PMCore/Client\PMCore/Client/Model\JObjectApiResult',
+                        '\PMCore\Client\PMCore\Client\Model\JObjectApiResult',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1315,7 +1315,7 @@ class FileApi
      */
     public function fileUploadAsyncWithHttpInfo($app_key, $path = null, $file = null, string $contentType = self::contentTypes['fileUpload'][0])
     {
-        $returnType = '\PMCore/Client\PMCore/Client/Model\JObjectApiResult';
+        $returnType = '\PMCore\Client\PMCore\Client\Model\JObjectApiResult';
         $request = $this->fileUploadRequest($app_key, $path, $file, $contentType);
 
         return $this->client
@@ -1487,9 +1487,9 @@ class FileApi
      * @param  int|null $take  (optional, default to 100)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['files'] to see the possible values for this operation
      *
-     * @throws \PMCore/Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PMCore\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \PMCore/Client\PMCore/Client/Model\JObjectApiResult
+     * @return \PMCore\Client\PMCore\Client\Model\JObjectApiResult
      */
     public function files($app_key, $path = null, $skip = 0, $take = 100, string $contentType = self::contentTypes['files'][0])
     {
@@ -1508,9 +1508,9 @@ class FileApi
      * @param  int|null $take  (optional, default to 100)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['files'] to see the possible values for this operation
      *
-     * @throws \PMCore/Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PMCore\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \PMCore/Client\PMCore/Client/Model\JObjectApiResult, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PMCore\Client\PMCore\Client\Model\JObjectApiResult, HTTP status code, HTTP response headers (array of strings)
      */
     public function filesWithHttpInfo($app_key, $path = null, $skip = 0, $take = 100, string $contentType = self::contentTypes['files'][0])
     {
@@ -1541,11 +1541,11 @@ class FileApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\PMCore/Client\PMCore/Client/Model\JObjectApiResult' === '\SplFileObject') {
+                    if ('\PMCore\Client\PMCore\Client\Model\JObjectApiResult' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\PMCore/Client\PMCore/Client/Model\JObjectApiResult' !== 'string') {
+                        if ('\PMCore\Client\PMCore\Client\Model\JObjectApiResult' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1563,7 +1563,7 @@ class FileApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\PMCore/Client\PMCore/Client/Model\JObjectApiResult', []),
+                        ObjectSerializer::deserialize($content, '\PMCore\Client\PMCore\Client\Model\JObjectApiResult', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1582,7 +1582,7 @@ class FileApi
                 );
             }
 
-            $returnType = '\PMCore/Client\PMCore/Client/Model\JObjectApiResult';
+            $returnType = '\PMCore\Client\PMCore\Client\Model\JObjectApiResult';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1615,7 +1615,7 @@ class FileApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PMCore/Client\PMCore/Client/Model\JObjectApiResult',
+                        '\PMCore\Client\PMCore\Client\Model\JObjectApiResult',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1665,7 +1665,7 @@ class FileApi
      */
     public function filesAsyncWithHttpInfo($app_key, $path = null, $skip = 0, $take = 100, string $contentType = self::contentTypes['files'][0])
     {
-        $returnType = '\PMCore/Client\PMCore/Client/Model\JObjectApiResult';
+        $returnType = '\PMCore\Client\PMCore\Client\Model\JObjectApiResult';
         $request = $this->filesRequest($app_key, $path, $skip, $take, $contentType);
 
         return $this->client

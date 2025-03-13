@@ -1,6 +1,6 @@
-# PMCore/Client\FileApi
+# PMCore\Client\FileApi
 
-All URIs are relative to https://your.apiserver.com, except if the operation defines another base path.
+All URIs are relative to https://api-staging.paomo.fun, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
@@ -14,7 +14,7 @@ All URIs are relative to https://your.apiserver.com, except if the operation def
 ## `fileCreateFolder()`
 
 ```php
-fileCreateFolder($app_key, $path): \PMCore/Client\PMCore/Client/Model\JObjectApiResult
+fileCreateFolder($app_key, $path): \PMCore\Client\PMCore\Client\Model\JObjectApiResult
 ```
 
 创建文件夹
@@ -27,10 +27,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: Bearer
-$config = PMCore/Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = PMCore\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new PMCore/Client\Api\FileApi(
+$apiInstance = new PMCore\Client\Api\FileApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -56,7 +56,7 @@ try {
 
 ### Return type
 
-[**\PMCore/Client\PMCore/Client/Model\JObjectApiResult**](../Model/JObjectApiResult.md)
+[**\PMCore\Client\PMCore\Client\Model\JObjectApiResult**](../Model/JObjectApiResult.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ try {
 ## `fileDelete()`
 
 ```php
-fileDelete($app_key, $path): \PMCore/Client\PMCore/Client/Model\JObjectApiResult
+fileDelete($app_key, $path): \PMCore\Client\PMCore\Client\Model\JObjectApiResult
 ```
 
 删除文件
@@ -87,10 +87,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: Bearer
-$config = PMCore/Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = PMCore\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new PMCore/Client\Api\FileApi(
+$apiInstance = new PMCore\Client\Api\FileApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -116,7 +116,7 @@ try {
 
 ### Return type
 
-[**\PMCore/Client\PMCore/Client/Model\JObjectApiResult**](../Model/JObjectApiResult.md)
+[**\PMCore\Client\PMCore\Client\Model\JObjectApiResult**](../Model/JObjectApiResult.md)
 
 ### Authorization
 
@@ -134,7 +134,7 @@ try {
 ## `fileRename()`
 
 ```php
-fileRename($app_key, $source_name, $dest_name): \PMCore/Client\PMCore/Client/Model\JObjectApiResult
+fileRename($app_key, $source_name, $dest_name): \PMCore\Client\PMCore\Client\Model\JObjectApiResult
 ```
 
 重命名文件
@@ -147,10 +147,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: Bearer
-$config = PMCore/Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = PMCore\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new PMCore/Client\Api\FileApi(
+$apiInstance = new PMCore\Client\Api\FileApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -178,7 +178,7 @@ try {
 
 ### Return type
 
-[**\PMCore/Client\PMCore/Client/Model\JObjectApiResult**](../Model/JObjectApiResult.md)
+[**\PMCore\Client\PMCore\Client\Model\JObjectApiResult**](../Model/JObjectApiResult.md)
 
 ### Authorization
 
@@ -196,7 +196,7 @@ try {
 ## `fileUpload()`
 
 ```php
-fileUpload($app_key, $path, $file): \PMCore/Client\PMCore/Client/Model\JObjectApiResult
+fileUpload($app_key, $path, $file): \PMCore\Client\PMCore\Client\Model\JObjectApiResult
 ```
 
 上传文件
@@ -209,10 +209,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: Bearer
-$config = PMCore/Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = PMCore\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new PMCore/Client\Api\FileApi(
+$apiInstance = new PMCore\Client\Api\FileApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -240,7 +240,7 @@ try {
 
 ### Return type
 
-[**\PMCore/Client\PMCore/Client/Model\JObjectApiResult**](../Model/JObjectApiResult.md)
+[**\PMCore\Client\PMCore\Client\Model\JObjectApiResult**](../Model/JObjectApiResult.md)
 
 ### Authorization
 
@@ -258,7 +258,7 @@ try {
 ## `files()`
 
 ```php
-files($app_key, $path, $skip, $take): \PMCore/Client\PMCore/Client/Model\JObjectApiResult
+files($app_key, $path, $skip, $take): \PMCore\Client\PMCore\Client\Model\JObjectApiResult
 ```
 
 文件列表
@@ -271,10 +271,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: Bearer
-$config = PMCore/Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = PMCore\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new PMCore/Client\Api\FileApi(
+$apiInstance = new PMCore\Client\Api\FileApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -304,7 +304,7 @@ try {
 
 ### Return type
 
-[**\PMCore/Client\PMCore/Client/Model\JObjectApiResult**](../Model/JObjectApiResult.md)
+[**\PMCore\Client\PMCore\Client\Model\JObjectApiResult**](../Model/JObjectApiResult.md)
 
 ### Authorization
 

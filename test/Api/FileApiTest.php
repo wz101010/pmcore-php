@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  PMCore/Client
+ * @package  PMCore\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,18 +25,18 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace PMCore/Client\Test\Api;
+namespace PMCore\Client\Test\Api;
 
-use \PMCore/Client\Configuration;
-use \PMCore/Client\ApiException;
-use \PMCore/Client\ObjectSerializer;
+use \PMCore\Client\Configuration;
+use \PMCore\Client\ApiException;
+use \PMCore\Client\ObjectSerializer;
 use PHPUnit\Framework\TestCase;
 
 /**
  * FileApiTest Class Doc Comment
  *
  * @category Class
- * @package  PMCore/Client
+ * @package  PMCore\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

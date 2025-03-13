@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  PMCore/Client\PMCore/Client/Model
+ * @package  PMCore\Client\PMCore\Client\Model
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,12 +26,12 @@
  * Do not edit the class manually.
  */
 
-namespace PMCore/Client\PMCore/Client/Model;
+namespace PMCore\Client\PMCore\Client\Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package PMCore/Client\PMCore/Client/Model
+ * @package PMCore\Client\PMCore\Client\Model
  * @author  OpenAPI Generator team
  */
 interface ModelInterface
