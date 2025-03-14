@@ -1,6 +1,6 @@
 # PMCore\Client\FileApi
 
-All URIs are relative to https://api-staging.paomo.fun, except if the operation defines another base path.
+All URIs are relative to https://your.apiserver.com, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
